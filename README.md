@@ -21,7 +21,7 @@ for ($i = 1; $i <= 1000000; $i++) {
     $name = generateName();
     $age = generateAge();
     $email = generateEmail($name);
-    $sql = "INSERT INTO users (name, age, email) VALUES ('$name', $age, '$email')";
+    $sql = "INSERT INTO tbl_usuario (name, age, email) VALUES ('$name', $age, '$email')";
     mysqli_query($conn, $sql);
 }
 $end = microtime(true);
