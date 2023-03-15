@@ -1,4 +1,3 @@
-#codigo_1_millon_registros
 
 <?php
 
@@ -57,5 +56,3 @@ function generateEmail($name) {
     $suffix = $domain[array_rand($domain)];
     return "$name@$suffix";
 }
-
-
