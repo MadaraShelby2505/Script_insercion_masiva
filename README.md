@@ -25,6 +25,7 @@ for ($i = 1; $i <= 1000000; $i++) {
 
 // Insertar los registros restantes
 
+
 if (!empty($values)) {
     $query = "INSERT INTO tabla (id, nombre, correo, telefono) VALUES " . implode(',', $values);
     mysqli_query($conexion, $query);
