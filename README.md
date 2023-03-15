@@ -20,9 +20,7 @@ for ($i = 1; $i <= 1000000; $i++) {
         $query = "INSERT INTO tabla (id, nombre, correo, telefono) VALUES " . implode(',', $values);
         mysqli_query($conexion, $query);
         $values = array();
-    }
-}
-
+    }}
 
 if (!empty($values)) {
     $query = "INSERT INTO tabla (id, nombre, correo, telefono) VALUES " . implode(',', $values);
