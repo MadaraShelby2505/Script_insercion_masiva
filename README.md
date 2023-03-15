@@ -1,6 +1,5 @@
 #codigo_1_millon_registros
 
-
 <?php
 
 // Conexión a la base de datos
