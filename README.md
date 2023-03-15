@@ -11,6 +11,8 @@ for ($i = 1; $i <= 1000000; $i++) {
     $values[] = "($id, '$nombre', '$correo', '$telefono')";
 
     // Insertar múltiples registros cada 10000 registros
+    
+    
     if ($i % 10000 == 0) {
         $query = "INSERT INTO tabla (id, nombre, correo, telefono) VALUES " . implode(',', $values);
         mysqli_query($conexion, $query);
@@ -19,6 +21,8 @@ for ($i = 1; $i <= 1000000; $i++) {
 }
 
 // Insertar los registros restantes
+
+
 if (!empty($values)) {
     $query = "INSERT INTO tabla (id, nombre, correo, telefono) VALUES " . implode(',', $values);
     mysqli_query($conexion, $query);
